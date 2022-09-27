@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/router';
 import {
-  Header, Title, Text, CardSimple,
+  Header, Title, Text, CardSimple, Footer,
 } from '../../components';
 
 /**
@@ -36,8 +36,8 @@ const Home = () => {
                     <Title
                         color="#FFF"
                         align="text-left"
-                        size="2.8rem"
-                        weight={600}
+                        size="3.6rem"
+                        weight={700}
                         cssClass="home-title mt-2 mb-2"
                     >
                         AQUA <br />INTERACTIVE
@@ -73,7 +73,7 @@ const Home = () => {
                         color="#1A1A2E"
                         align="text-left"
                         size="1.8rem"
-                        weight={700}
+                        weight={600}
                         cssClass="home-title mt-4 mb-3"
                     >
                         En Aqua Interactive tenemos más de una década de experiencia
@@ -99,15 +99,15 @@ const Home = () => {
 
             <div className="flex flex-col md:flex-row py-2 px-14 lg:px-40">
                 <div className='w-full grid md:grid-cols-2 lg:grid-cols-3 gap-6'>
-                    <CardSimple title='INNOVACIÓN' marginXl={10} desc='Aplicaciones novedosas, tendencias tecnológicas y evolución de paradigmas.' color='' />
-                    <CardSimple title='PERSONALIZACIÓN' marginXl={10} desc='Enfoque en las necesidades específicas de cada cliente.' color='' />
-                    <CardSimple title='FLEXIBILIDAD' marginXl={10} desc='Adaptación a los retos que presenta cada proyecto.' color='' />
+                    <CardSimple title='INNOVACIÓN' marginXl={10} desc='Aplicaciones novedosas, tendencias tecnológicas y evolución de paradigmas.' color='red-300' />
+                    <CardSimple title='PERSONALIZACIÓN' marginXl={10} desc='Enfoque en las necesidades específicas de cada cliente.' color='cyan-300' />
+                    <CardSimple title='FLEXIBILIDAD' marginXl={10} desc='Adaptación a los retos que presenta cada proyecto.' color='blue-300' />
                 </div>
             </div>
 
             <div key={'servicios'} id='servicios' className="flex flex-col md:flex-row py-12 px-14">
                 <div className="w-full md:w-2/4 lg:w-2/5 px-0 md:px-8 lg:px-16 py-2">
-                <Title
+                    <Title
                         color="#1A1A2E"
                         align="text-left"
                         size="1.8rem"
@@ -132,14 +132,14 @@ const Home = () => {
                     </Title>
                 </div>
                 <div className='w-full grid md:grid-cols-2 lg:grid-cols-4 gap-2 px-14 lg:px-16'>
-                    <CardSimple title='CALIDAD' marginXl={5} desc='Provocamos procesos de calidad continua en todos los niveles de tu organización.' color='' />
-                    <CardSimple title='ÓRDEN' marginXl={5} desc='Instauramos orden en los procesos internos así como en los proyectos de tu organización.' color='' />
-                    <CardSimple title='ESTABILIDAD' marginXl={5} desc='Le damos equilibrio y solidez a la estructura y los recursos de tu organización.' color='' />
-                    <CardSimple title='EXCELENCIA' marginXl={5} desc='Renovamos, transformamos y fortalecemos los sistemas existentes en tu organización.' color='' />
+                    <CardSimple title='CALIDAD' marginXl={5} desc='Provocamos procesos de calidad continua en todos los niveles de tu organización.' color='gray-300' />
+                    <CardSimple title='ÓRDEN' marginXl={5} desc='Instauramos orden en los procesos internos así como en los proyectos de tu organización.' color='gray-300' />
+                    <CardSimple title='ESTABILIDAD' marginXl={5} desc='Le damos equilibrio y solidez a la estructura y los recursos de tu organización.' color='gray-300' />
+                    <CardSimple title='EXCELENCIA' marginXl={5} desc='Renovamos, transformamos y fortalecemos los sistemas existentes en tu organización.' color='gray-300' />
                 </div>
             </div>
         </div>
-    {/* <Footer /> */}
+      <Footer />
     </>
   );
 };
