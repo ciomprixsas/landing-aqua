@@ -1,5 +1,6 @@
 import React from 'react';
 import { Text, Title } from '../';
+import Link from 'next/link';
 
 interface FooterProps {
 
@@ -14,12 +15,12 @@ export const Footer: React.FC<FooterProps> = ({
     >
         <div className="flex flex-col justify-start md:flex-row items-center md:items-start text-center md:text-left ">
             <div className="flex w-full md:w-[30%] flex-col lg:pl-8 items-center md:items-start md:ml-12 text-right">
-                <a
+                <Link
                     href="/"
                     className="ml-2 md:ml-2 lg:ml-4 xl:ml-14 mt-4"
                 >
                     <img className="w-48 md:w-36 lg:w-48" src="/icons/vercel-light.png" />
-                </a>
+                </Link>
             </div>
             <div className="flex w-full md:w-[30%] lg:w-[20%] mt-5 md:mt-0 flex-col text-sm font-thin pl-2 text-white">
                 <Title
@@ -51,8 +52,6 @@ export const Footer: React.FC<FooterProps> = ({
                     Legales
                 </Title>
                 <hr className='my-2 h-0.5 w-8 bg-blue-800 border-0' />
-                
-
             </div>
         </div>
         <div className='flex w-full mt-4'>
