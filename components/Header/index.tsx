@@ -23,16 +23,21 @@ export const Header: React.FC<HeaderProps> = ({
   const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
 
+  useEffect(() => {
+    if (active) {
+      document.title = 'Sitio Aq';
+    }
+  });
 
   return (
     <div className="w-full fixed z-50 text-gray-700 bg-white dark-mode:text-gray-200 dark-mode:bg-gray-800">
-      <div className="flex max-w-screen-xxl px-6 py-4 mx-auto lg:items-center justify-between lg:flex-row lg:px-16 lg:py-7">
+      <div className="flex max-w-screen-xxl px-6 py-4 mx-auto lg:items-center justify-between lg:flex-row lg:px-16 lg:py-5">
         <div className="py-0 flex flex-row w-full lg:w-auto items-center justify-between lg:ml-8">
           <a
             href="/"
             className="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none"
           >
-            <img className="w-3/6" src="/vercel.svg" />
+            <img className="w-3/6" src="/icons/vercel.svg" />
           </a>
           <div className="contents">
             <button
@@ -64,10 +69,10 @@ export const Header: React.FC<HeaderProps> = ({
           <nav className="flex flex-col flex-grow pb-2 md:justify-start">
             {list.map((item, i) => (
               <a
-                key={'item2-' + i}
+                key={item.tab}
                 className={`block py-2 px-4 border-b border-gray-200 text-sm ${item.tab === active ? 'font-bold' : 'font-light'} tracking-wide focus:outline-none`}
-                href='#'
-                onClick={() => router.push(item.url)}
+                href={item.url}
+                onClick={() => setIsOpen(false)}
               >
                 {item.title}
               </a>

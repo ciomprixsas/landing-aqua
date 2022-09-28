@@ -3,6 +3,7 @@ import { Text } from '../';
 interface CardProps {
     children?: any;
     color: string;
+    shadow?: string;
     title: string;
     desc: string;
     marginXl?: number;
@@ -13,11 +14,14 @@ interface CardProps {
     title,
     desc,
     marginXl,
+    shadow,
     children,
   }: CardProps): JSX.Element => {
     return (
-        <div className={`md:mx-2 lg:mx-3 xl:mx-${marginXl} px-2 lg:px-5 xl:px-10 py-14 rounded-sm flex flex-col items-center text-center hover:bg-slate-50 cursor-pointer shadow-2xl`}>
-            <span className={`p-5 rounded-full text-white shadow-lg shadow-${color} bg-${color}`}>
+        <div className={`md:mx-2 lg:mx-3 xl:mx-${marginXl} px-2 lg:px-5 xl:px-10 py-14 rounded-sm flex flex-col items-center text-center hover:bg-slate-50 cursor-pointer shadow-xl`}
+            style={{ backgroundColor: '#fbfbfb'}}
+        >
+            <span className={`p-5 rounded-full text-white shadow-lg ${shadow} ${color}`}>
                 <svg
                     xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor" strokeWidth="1.5">
