@@ -19,7 +19,7 @@ export const Footer: React.FC<FooterProps> = ({
                     href="/"
                     className="ml-2 md:ml-2 lg:ml-4 xl:ml-14 mt-4"
                 >
-                    <img className="w-48 md:w-36 lg:w-48" src="/icons/vercel-light.png" />
+                    <img className="w-48 md:w-36 lg:w-48" src="icons/vercel-light.png" />
                 </Link>
             </div>
             <div className="flex w-full md:w-[30%] lg:w-[20%] mt-5 md:mt-0 flex-col text-sm font-thin pl-2 text-white">
