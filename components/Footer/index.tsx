@@ -11,7 +11,7 @@ export const Footer: React.FC<FooterProps> = ({
 }: FooterProps): JSX.Element => {
   return (
     <div key={'contacto'} id='contacto' className='flex flex-col max-w-screen-xxl mx-auto bg-cover bg-bottom py-10 px-8 md:px-16 lg:px-16'
-        style={{ backgroundImage: "url('/images/carousel-2.jpg')" }}
+        style={{ backgroundImage: "url('images/carousel-2.jpg')" }}
     >
         <div className="flex flex-col justify-start md:flex-row items-center md:items-start text-center md:text-left ">
             <div className="flex w-full md:w-[30%] flex-col lg:pl-8 items-center md:items-start md:ml-12 text-right">
