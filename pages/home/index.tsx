@@ -39,15 +39,28 @@ const Home = () => {
                             Tecnología
                         </Text>
                     </div>
-                    <Title
-                        color="#FFF"
-                        align="text-left"
-                        size="3.6rem"
-                        weight={700}
-                        cssClass="home-title mt-2 mb-2"
-                    >
-                        AQUA <br />INTERACTIVE
-                    </Title>
+                    <div className='block sm:hidden'>
+                        <Title
+                            color="#FFF"
+                            align="text-left"
+                            size="2.6rem"
+                            weight={700}
+                            cssClass="home-title mt-2 mb-2 text-lg"
+                        >
+                            AQUA <br />INTERACTIVE
+                        </Title>
+                    </div>
+                    <div className='hidden sm:block'>
+                        <Title
+                            color="#FFF"
+                            align="text-left"
+                            size="3.6rem"
+                            weight={700}
+                            cssClass="home-title mt-2 mb-2 text-lg"
+                        >
+                            AQUA <br />INTERACTIVE
+                        </Title>
+                    </div>
                     <div>
                         <Text
                             color="#FFF"

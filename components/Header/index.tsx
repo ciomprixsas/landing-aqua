@@ -41,7 +41,7 @@ export const Header: React.FC<HeaderProps> = ({
           <div className="contents">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="lg:hidden mr-4 opacity-75 focus:outline-none"
+              className="lg:hidden opacity-75 focus:outline-none"
             >
               {isOpen ? (
                 <img src="icons/close.png" />

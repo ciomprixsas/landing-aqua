@@ -8,3 +8,6 @@ const nextConfig = {
 }
 
 module.exports = nextConfig
+/* 
+  basePath: "/landing-aqua",
+  assetPrefix: "/landing-aqua", */
