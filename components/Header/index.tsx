@@ -37,7 +37,7 @@ export const Header: React.FC<HeaderProps> = ({
             <a
               className="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none"
             >
-              <img className="w-3/6" src="/icons/vercel.svg" />
+              <img className="w-3/6" src="icons/vercel.svg" />
             </a>
           </Link>
           <div className="contents">
@@ -46,9 +46,9 @@ export const Header: React.FC<HeaderProps> = ({
               className="lg:hidden mr-4 opacity-75 focus:outline-none"
             >
               {isOpen ? (
-                <img src="/icons/close.png" />
+                <img src="icons/close.png" />
               ) : (
-                  <img src="/icons/menu.png" />
+                  <img src="icons/menu.png" />
                 )}
             </button>
           </div>

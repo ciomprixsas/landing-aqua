@@ -25,7 +25,7 @@ const Home = () => {
         >
             <div
                 className="flex flex-col bg-top bg-center bg-fixed bg-cover bg-no-repeat py-16 px-14 w-100"
-                style={{ backgroundImage: "url('/images/carousel-1.png')" }}
+                style={{ backgroundImage: "url('images/carousel-1.png')" }}
             >
                 <div className="lg:px-32">
                     <div>
@@ -133,7 +133,7 @@ const Home = () => {
 
             <div key={'sectores'} id='sectores'
                 className='flex flex-col bg-opacity-85 bg-top bg-center bg-fixed bg-cover bg-no-repeat py-14 px-14 w-100 mt-8'
-                style={{ backgroundImage: "url('/images/carousel-2.jpg')" }}
+                style={{ backgroundImage: "url('images/carousel-2.jpg')" }}
             >
                 <div className="w-full px-0 md:px-8 lg:px-16 py-2">
                     <Title
