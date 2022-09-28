@@ -3,15 +3,13 @@ import { useRouter } from 'next/router';
 import Link from 'next/link';
 
 const list = [
-  { title: 'HOME', url: '/home', tab: 'home' },
+  { title: 'HOME', url: '/', tab: 'home' },
   { title: 'QUIÉNES SOMOS', url: '#somos', tab: 'somos' },
   { title: 'SERVICIOS', url: '#servicios', tab: 'servicios' },
   { title: 'SECTORES', url: '#sectores', tab: 'sectores' },
   { title: 'BENEFICIOS', url: '#beneficios', tab: 'beneficios' },
   { title: 'CONTACTO', url: '#contacto', tab: 'contacto' },
 ];
-
-// const icon = '/icons/logo-profile.png';
 
 interface HeaderProps {
   active: any;
